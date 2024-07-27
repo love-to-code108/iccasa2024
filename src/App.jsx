@@ -1,12 +1,12 @@
-
+import "./main.scss"
+import { Home } from "./pages/Home"
 
 function App() {
   
-
   return (
-    <>
-      <div>My name is biswanath</div>
-    </>
+    <div>
+      <Home/>
+    </div>
   )
 }
 
