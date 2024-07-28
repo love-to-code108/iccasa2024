@@ -2,18 +2,6 @@
 import uemLogoBackground from "../assets/PNG/uemBackgroundLogo.svg"
 import uemLogo from "../assets/PNG/uemLogo2-removebg-preview.png"
 import icassaLogo from "../assets/PNG/ICASSALogo.png"
-import img2022_1 from "../assets/PNG/2022_Event_Images/2022-pic1.jpg"
-import img2022_2 from "../assets/PNG/2022_Event_Images/2022-pic2.jpg"
-import img2022_3 from "../assets/PNG/2022_Event_Images/2022-pic3.jpg"
-import img2022_4 from "../assets/PNG/2022_Event_Images/2022-pic4.jpg"
-import img2023_1 from "../assets/PNG/2023_Event_Images/2023-image1.jpg"
-import img2023_2 from "../assets/PNG/2023_Event_Images/2023-image2.jpg"
-import img2023_3 from "../assets/PNG/2023_Event_Images/2023-image3.jpg"
-import img2023_4 from "../assets/PNG/2023_Event_Images/2023-image4.jpg"
-import img2023_5 from "../assets/PNG/2023_Event_Images/2023-image5.jpg"
-import img2023_6 from "../assets/PNG/2023_Event_Images/2023-image6.jpg"
-import img2023_7 from "../assets/PNG/2023_Event_Images/2023-image7.jpg"
-import img2023_8 from "../assets/PNG/2023_Event_Images/2023-image8.jpg"
 
 
 // CAROUSEL
@@ -95,14 +83,16 @@ export const Home = () => {
           <div>Conference Dates</div>
           <div>Editorial Team</div>
           <div>Contact Us</div>
+          <div className="Home-wrapper3-dark_overlay"></div>
         </div>
 
 
 
 
-        {/* THE AUTO CHANGING IMAGE */}
+        {/* THE OVERLAY */}
 
-        <div className="Home-wrapper3-imageChanger">
+        {/* THE AUTO CHANGING IMAGE */}
+        <div className="Home-wrapper4-imageChanger">
           <div className="embla" ref={emblaRef}>
             <div className="embla__container">
               <div className="embla__slide slide1"></div>
