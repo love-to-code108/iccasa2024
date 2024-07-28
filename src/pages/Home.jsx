@@ -2,6 +2,7 @@
 import uemLogoBackground from "../assets/PNG/uemBackgroundLogo.svg"
 import uemLogo from "../assets/PNG/uemLogo2-removebg-preview.png"
 import icassaLogo from "../assets/PNG/ICASSALogo.png"
+import locationIcon from "../assets/PNG/location_on.png"
 
 
 // CAROUSEL
@@ -100,6 +101,10 @@ export const Home = () => {
           <div className="Home-wrapper-5-writing_over_the_image font-sora">
             <h1>ICCASA</h1>
             <h3>International Conference On Computational Applied Sciences And It's Application</h3>
+            <div className=" flex justify-start items-center">
+              <img src={locationIcon} alt="" />
+              <h4>University of Engineering And Management Jaipur</h4>
+            </div>
           </div>
 
 
