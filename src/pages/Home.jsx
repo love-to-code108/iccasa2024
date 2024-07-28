@@ -17,11 +17,27 @@ import img2023_8 from "../assets/PNG/2023_Event_Images/2023-image8.jpg"
 
 
 // CAROUSEL
-import React, { useEffect } from 'react'
+import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 
 
 export const Home = () => {
+
+
+  // CAROUSEL LOGIC
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000 })])
+
+
+
+
+
+
+
+
+
+
+
 
 
   return (
@@ -85,6 +101,25 @@ export const Home = () => {
 
 
         {/* THE AUTO CHANGING IMAGE */}
+
+        <div className="Home-wrapper3-imageChanger">
+          <div className="embla" ref={emblaRef}>
+            <div className="embla__container">
+              <div className="embla__slide slide1"></div>
+              <div className="embla__slide slide2"></div>
+              <div className="embla__slide slide3"></div>
+              <div className="embla__slide slide4"></div>
+              <div className="embla__slide slide5"></div>
+              <div className="embla__slide slide6"></div>
+              <div className="embla__slide slide7"></div>
+              <div className="embla__slide slide8"></div>
+              <div className="embla__slide slide9"></div>
+              <div className="embla__slide slide10"></div>
+              <div className="embla__slide slide11"></div>
+              <div className="embla__slide slide12"></div>
+            </div>
+          </div>
+        </div>
 
 
 

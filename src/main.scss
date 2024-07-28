@@ -10,12 +10,19 @@
     font-family: "Sora", sans-serif;
 }
 
+/* Hide horizontal scrollbar */
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  
+
 
 
 // HOME PAGE FROM 1920 TO XXL
 .Home-xxl {
     width: 100vw;
-    height: 100vh;
     background-color: grey;
     z-index: 1;
 
@@ -34,6 +41,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        overflow: hidden;
 
 
 
@@ -94,6 +103,8 @@
 
             overflow: hidden;
 
+            
+
 
             div{
                 padding: 1rem 0rem;
@@ -114,3 +125,43 @@
 
     }
 }
+
+
+// THE CAROUSEL
+.Home-wrapper3-imageChanger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    overflow: hidden;
+    height: 47rem;
+}
+
+.embla {
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+  }
+  .embla__container {
+    display: flex;
+    width: 100vw;
+
+    .slide1{
+        background-image: url(./assets/PNG/2023_Event_Images/2023-image1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 47rem;
+    }
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    max-width: 1920px;
+    width: 100vw;
+  }
+
+
+  
