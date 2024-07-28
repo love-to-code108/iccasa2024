@@ -52,7 +52,18 @@ export const Home = () => {
 
 
         {/* NAVBAR */}
-
+          <div className="Home-wrapper2-Navbar font-sora">
+              <div>Home</div>
+              <div>About</div>
+              <div>Scope</div>
+              <div>Keynote Speaker</div>
+              <div>Organizing Team</div>
+              <div>Registration</div>
+              <div>Gallery</div>
+              <div>Conference Dates</div>
+              <div>Editorial Team</div>
+              <div>Contact Us</div>
+          </div>
 
 
 

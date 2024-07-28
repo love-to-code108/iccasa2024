@@ -10,6 +10,8 @@
     font-family: "Sora", sans-serif;
 }
 
+
+
 // HOME PAGE FROM 1920 TO XXL
 .Home-xxl {
     width: 100vw;
@@ -34,6 +36,8 @@
         align-items: center;
 
 
+
+        // *******************************************************************
         // THE BANNER ABOVE THE NAVBAR
         // WRAPPER 1
         .Home-wrapper1-Banner_wrapper {
@@ -44,7 +48,7 @@
 
             position: relative;
 
-            
+
 
 
 
@@ -66,13 +70,44 @@
 
 
                 // DIV 1
-                .Home-wrapper1-2-div1-Uem_background_logo{
+                .Home-wrapper1-2-div1-Uem_background_logo {
                     position: absolute;
 
                 }
             }
 
         }
+
+
+
+        //********************************************************************
+        // THE NAVBAR 
+        .Home-wrapper2-Navbar{
+            width: 100%;
+            padding: 0rem 8rem;
+            background-color: #DEDEDE;
+            
+            display: flex;
+            justify-content: space-between;
+
+            font-size: 1.5rem;
+
+
+            div{
+                padding: 1rem 0rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+
+            }
+
+            div:hover{
+                background-color: #14008F;
+                color: white;
+                cursor: pointer;
+            }
+
+        }
+
 
     }
 }
