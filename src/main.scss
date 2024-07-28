@@ -4,7 +4,75 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+// GLOBAL CSS
 
-.font-sora{
+.font-sora {
     font-family: "Sora", sans-serif;
+}
+
+// HOME PAGE FROM 1920 TO XXL
+.Home-xxl {
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+
+
+    .Home-main {
+        max-width: 1920px;
+        width: 100%;
+
+        background-color: white;
+
+        z-index: +10;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        // THE BANNER ABOVE THE NAVBAR
+        // WRAPPER 1
+        .Home-wrapper1-Banner_wrapper {
+            width: 100%;
+            padding: 1.8rem 8rem 1rem 8rem;
+            display: flex;
+            justify-content: space-between;
+
+            position: relative;
+
+            
+
+
+
+            // DIV 3
+            .Home-wrapper1-2-div3 {
+                font-size: 2.5rem;
+                font-weight: 700;
+
+                color: #14008F;
+
+                width: 56rem;
+                text-align: center;
+                position: relative;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+
+                // DIV 1
+                .Home-wrapper1-2-div1-Uem_background_logo{
+                    position: absolute;
+
+                }
+            }
+
+        }
+
+    }
 }
