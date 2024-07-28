@@ -177,7 +177,7 @@ body::-webkit-scrollbar {
         background-position: center;
         background-size: cover;
         width: 100vw;
-        height: 47rem;
+        height: 45rem;
     }
 
     .slide2 {
@@ -260,6 +260,13 @@ body::-webkit-scrollbar {
 
     top: 30rem;
     left: 8rem;
+    pointer-events: none;
+
+    // TO PREVENT USER SELECTION
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 
     h1{
         font-size: 9rem;
@@ -286,4 +293,12 @@ body::-webkit-scrollbar {
             cursor: pointer;
         }
     }
+
+}
+.Home-wrapper-6-The_arrow{
+    z-index: 11;
+    position: absolute;
+    
+    bottom: 0rem;
+
 }

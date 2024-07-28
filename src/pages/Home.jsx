@@ -3,6 +3,7 @@ import uemLogoBackground from "../assets/PNG/uemBackgroundLogo.svg"
 import uemLogo from "../assets/PNG/uemLogo2-removebg-preview.png"
 import icassaLogo from "../assets/PNG/ICASSALogo.png"
 import locationIcon from "../assets/PNG/location_on.png"
+import downArrow from "../assets/PNG/downArrow.png"
 
 
 // CAROUSEL
@@ -110,6 +111,8 @@ export const Home = () => {
 
 
 
+
+
           <div className="embla" ref={emblaRef}>
             <div className="embla__container">
               <div className="embla__slide slide1"></div>
@@ -135,6 +138,9 @@ export const Home = () => {
 
 
         {/* THE BOTTOM ARROW */}
+          <div className="Home-wrapper-6-The_arrow animate-bounce">
+            <img src={downArrow} alt="a down arrow" />
+          </div>
 
 
 
