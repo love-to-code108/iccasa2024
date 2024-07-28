@@ -69,7 +69,7 @@ export const Home = () => {
 
 
         {/* THE AUTO CHANGING IMAGE */}
-
+        
 
 
 
