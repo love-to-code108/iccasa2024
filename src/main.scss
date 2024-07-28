@@ -201,6 +201,43 @@ body::-webkit-scrollbar {
         background-position-y: -1rem;
     }
 
+    .slide6 {
+        @extend .slide1;
+        background-image: url(./assets/PNG/2023_Event_Images/2023-image7.jpg);
+        background-position-y: -23rem;
+    }
+
+    .slide7 {
+        @extend .slide1;
+        background-image: url(./assets/PNG/2023_Event_Images/2023-image8.jpg);
+        background-position-y: -10rem;
+    }
+
+    .slide8 {
+        @extend .slide1;
+        background-image: url(./assets/PNG/2022_Event_Images/2022-pic1.jpg);
+        background-position-y: -1rem;
+    }
+
+    .slide9 {
+        @extend .slide1;
+        background-image: url(./assets/PNG/2022_Event_Images/2022-pic2.jpg);
+        background-position-y: -12rem;
+    }
+
+    .slide10 {
+        @extend .slide1;
+        background-image: url(./assets/PNG/2022_Event_Images/2022-pic3.jpg);
+        background-position-y: -6rem;
+    }
+
+    .slide11 {
+        @extend .slide1;
+        background-image: url(./assets/PNG/2022_Event_Images/2022-pic4.jpg);
+        background-position-y: -16rem;
+    }
+    
+
 
 }
 
@@ -209,4 +246,25 @@ body::-webkit-scrollbar {
     min-width: 0;
     max-width: 1920px;
     width: 100vw;
+}
+
+
+
+
+// WRITING OVER THE IMAGES
+.Home-wrapper-5-writing_over_the_image{
+    position: absolute;
+    z-index: 11;
+    color: white;
+
+    h1{
+        font-size: 7rem;
+        font-weight: 600;
+        line-height: 5rem;
+    }
+
+    h3{
+        width: 54rem;
+        font-size: 2rem;
+    }
 }

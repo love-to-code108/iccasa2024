@@ -14,7 +14,7 @@ export const Home = () => {
 
 
   // CAROUSEL LOGIC
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000 })])
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 2000 })])
 
 
 
@@ -83,16 +83,28 @@ export const Home = () => {
           <div>Conference Dates</div>
           <div>Editorial Team</div>
           <div>Contact Us</div>
+
+          {/* THE OVERLAY */}
           <div className="Home-wrapper3-dark_overlay"></div>
         </div>
 
 
 
 
-        {/* THE OVERLAY */}
+
 
         {/* THE AUTO CHANGING IMAGE */}
         <div className="Home-wrapper4-imageChanger">
+
+          {/* WRITING OVER THE IMAGE */}
+          <div className="Home-wrapper-5-writing_over_the_image font-sora">
+            <h1>ICCASA</h1>
+            <h3>International Conference On Computational Applied Sciences And It's Application</h3>
+          </div>
+
+
+
+
           <div className="embla" ref={emblaRef}>
             <div className="embla__container">
               <div className="embla__slide slide1"></div>
@@ -106,7 +118,6 @@ export const Home = () => {
               <div className="embla__slide slide9"></div>
               <div className="embla__slide slide10"></div>
               <div className="embla__slide slide11"></div>
-              <div className="embla__slide slide12"></div>
             </div>
           </div>
         </div>
@@ -114,7 +125,6 @@ export const Home = () => {
 
 
 
-        {/* WRITING OVER THE IMAGE */}
 
 
 
