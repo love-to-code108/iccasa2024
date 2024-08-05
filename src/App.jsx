@@ -81,10 +81,11 @@ function Navbar() {
     <div className="Navbar-main 
     2xl:text-3xl
     ">
-      <NavLink to="/scope" className="nav-link">Home</NavLink>
+      <NavLink to="/" className="nav-link">Home</NavLink>
       <NavLink to="/scope" className="nav-link">Scope</NavLink>
-      <NavLink to="/scope" className="nav-link">Keynote Speaker</NavLink>
-      <NavLink to="/scope" className="nav-link">Organizing Team</NavLink>
+      <NavLink to="/Keynote_Speaker" className="nav-link">Keynote Speaker</NavLink>
+      <NavLink to="/Organinzing_Team" className="nav-link">Organizing Team</NavLink>
+      <NavLink to="/Registration" className="nav-link">Registration</NavLink>
       <NavLink to="/scope" className="nav-link">Contact Us</NavLink>
     </div>
   );
