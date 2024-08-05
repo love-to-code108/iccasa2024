@@ -20,7 +20,11 @@ function Banner() {
 
       {/* ICCASA LOGO */}
       <div>
-        <img src={icassaLogo} alt="" />
+        <img className="
+        2xl:h-[136px]
+        xl:h-[130px]
+        lg:h-[124px]
+        " src={icassaLogo} alt="" />
       </div>
 
 
@@ -29,12 +33,16 @@ function Banner() {
 
       {/* UEM TEXT */}
       <div className="Banner-wrapper-1-text_and_backgroundLogo_uem">
-        <h1 className=" text-[#14008F] 2xl:text-4xl font-bold 2xl:w-[43rem]">University Of Engineering and Management Jaipur</h1>
+        <h1 className=" text-[#14008F]  font-bold 
+        2xl:w-[43rem] 2xl:text-4xl
+        xl:text-3xl xl:w-[36rem]
+        lg:text-2xl lg:w-[29rem]">
+          University Of Engineering and Management Jaipur</h1>
 
 
         {/* UEM BACKGROUND LOGO */}
         <div className="banner-uemLogoBackground">
-          <img src={uemLogoBackground} alt="" />
+          <img className="" src={uemLogoBackground} alt="" />
         </div>
       </div>
 
@@ -42,7 +50,11 @@ function Banner() {
 
       {/* UEM LOGO */}
       <div>
-        <img src={uemLogo} alt="" />
+        <img className="
+        2xl:h-[136px]
+        xl:h-[130px]
+        lg:h-[124px]
+        " src={uemLogo} alt="" />
       </div>
 
 

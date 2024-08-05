@@ -46,3 +46,36 @@ body{
     position: absolute;
     
 }
+
+
+
+// MAKNG THE BANNER RESPONSIVE
+@media (max-width: 1536px) {
+    .Banner-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   
+        width: 100vw;
+        height: 10rem;
+   
+        position: relative;
+   
+        padding: 0rem 6rem;
+   }
+}
+
+@media (max-width: 1280px) {
+    .Banner-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   
+        width: 100vw;
+        height: 10rem;
+   
+        position: relative;
+   
+        padding: 0rem 4rem;
+   }
+}
