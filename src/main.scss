@@ -6,7 +6,43 @@
 
 // GLOBAL CSS
 
-.font-sora {
+.font-sofia {
     font-family: "Sofia Sans", sans-serif;
 }
 
+body{
+    font-family: "Sofia Sans", sans-serif;
+}
+
+
+
+
+
+// BANNER
+.Banner-main{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+     width: 100vw;
+     height: 10rem;
+
+     position: relative;
+
+     padding: 0rem 8rem;
+}
+
+
+.Banner-wrapper-1-text_and_backgroundLogo_uem{
+    text-align: center;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-uemLogoBackground{
+    position: absolute;
+    
+}

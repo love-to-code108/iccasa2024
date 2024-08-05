@@ -1,16 +1,92 @@
 import "./main.scss"
 import { Home } from "./pages/Home"
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { KeynoteSpeaker } from "./pages/KeynoteSpeaker.jsx";
+import { OrganizingTeam } from "./pages/OrganizingTeam.jsx";
+import { Scope } from "./pages/Scope.jsx"
+import { Registration } from "./pages/Registration.jsx"
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 
+// IMAGES
+import uemLogoBackground from "./assets/PNG/uemBackgroundLogo.svg"
+import uemLogo from "./assets/PNG/uemLogo2-removebg-preview.png"
+import icassaLogo from "./assets/PNG/ICASSALogo.png"
+
+
+function Banner() {
+
+
+  return (
+    <div className="Banner-main">
+
+      {/* ICCASA LOGO */}
+      <div>
+        <img src={icassaLogo} alt="" />
+      </div>
+
+
+
+
+
+      {/* UEM TEXT */}
+      <div className="Banner-wrapper-1-text_and_backgroundLogo_uem">
+        <h1 className=" text-[#14008F] 2xl:text-4xl font-bold 2xl:w-[43rem]">University Of Engineering and Management Jaipur</h1>
+
+
+        {/* UEM BACKGROUND LOGO */}
+        <div className="banner-uemLogoBackground">
+          <img src={uemLogoBackground} alt="" />
+        </div>
+      </div>
+
+
+
+      {/* UEM LOGO */}
+      <div>
+        <img src={uemLogo} alt="" />
+      </div>
+
+
+    </div>
+  );
+}
+
+
+function Navbar() {
+
+
+  return (
+    <div className="">
+      <NavLink to="/scope">Scope</NavLink>
+      <NavLink to="/scope">Scope</NavLink>
+      <NavLink to="/scope">Scope</NavLink>
+      <NavLink to="/scope">Scope</NavLink>
+      <NavLink to="/scope">Scope</NavLink>
+    </div>
+  );
+}
+
+
+function ContactUs() {
+
+  return (
+    <div className=" border-2">Contact Us Section</div>
+  );
+}
 
 function App() {
 
   return (
     <BrowserRouter>
+      <Banner />
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/" />
+        <Route path="/" element={<Home />} />
+        <Route path="/scope" element={<Scope />} />
+        <Route path="/Registration" element={<Registration />} />
+        <Route path="/Organinzing_Team" element={<OrganizingTeam />} />
+        <Route path="/Keynote_Speaker" element={<KeynoteSpeaker />} />
       </Routes>
+      <ContactUs />
     </BrowserRouter>
   )
 }
