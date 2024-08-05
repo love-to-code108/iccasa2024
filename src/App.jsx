@@ -16,6 +16,10 @@ function Banner() {
 
 
   return (
+
+
+    // *********************************************************************
+    // BANNER
     <div className="Banner-main">
 
       {/* ICCASA LOGO */}
@@ -63,21 +67,36 @@ function Banner() {
 }
 
 
+
+
+
+
+
+// ***************************************************************************
+// NAVBAR
 function Navbar() {
 
 
   return (
-    <div className="">
-      <NavLink to="/scope">Scope</NavLink>
-      <NavLink to="/scope">Scope</NavLink>
-      <NavLink to="/scope">Scope</NavLink>
-      <NavLink to="/scope">Scope</NavLink>
-      <NavLink to="/scope">Scope</NavLink>
+    <div className="Navbar-main 
+    2xl:text-3xl
+    ">
+      <NavLink to="/scope" className="nav-link">Home</NavLink>
+      <NavLink to="/scope" className="nav-link">Scope</NavLink>
+      <NavLink to="/scope" className="nav-link">Keynote Speaker</NavLink>
+      <NavLink to="/scope" className="nav-link">Organizing Team</NavLink>
+      <NavLink to="/scope" className="nav-link">Contact Us</NavLink>
     </div>
   );
 }
 
 
+
+
+
+
+// ***************************************************************************
+// CONTACT US
 function ContactUs() {
 
   return (
