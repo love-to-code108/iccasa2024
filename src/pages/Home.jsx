@@ -48,10 +48,17 @@ export const Home = () => {
       if(window.innerWidth < 1380){
         setAutoWidth("35rem")
       }
+      if(window.innerWidth < 1198){
+        setAutoWidth("31rem")
+      }
+      if(window.innerWidth < 1102){
+        setAutoWidth("27rem")
+      }
       if(window.innerWidth > 1542){
         setAutoWidth("43rem")
       }
     }
+
 
     window.addEventListener('resize', handleResize);
 
@@ -89,15 +96,22 @@ export const Home = () => {
 
 
         {/* THE WRITING OVER THE CAROUSOUL AND THE BLACK OVERLAY*/}
-        <div className="Home-main-wrapper-2-writing_over_carousel_and_black_overlay 2xl:px-32">
+        <div className="Home-main-wrapper-2-writing_over_carousel_and_black_overlay 2xl:px-32 xl:px-16 lg:px-8">
 
           {/* THE MAIN HEADING */}
-          <h1 className=" 2xl:text-7xl font-bold mb-2">ICCASA</h1>
+          <h1 className=" xl:text-7xl
+          lg:text-5xl font-bold xl:mb-2">ICCASA</h1>
 
 
           {/* THE FULL FORM */}
           <h3 className=" 
-          2xl:text-3xl 2xl:w-[56rem] 2xl:mb-4">International Conference On Computational Applied Sciences And It's Application . </h3>
+          2xl:text-3xl
+          xl:text-2xl
+          2xl:w-[56rem]
+          xl:w-[45rem] 
+          xl:mb-4
+          lg:text-xl
+          lg:w-[38rem]">International Conference On Computational Applied Sciences And It's Application . </h3>
 
 
 
@@ -109,7 +123,7 @@ export const Home = () => {
             <img className=" w-[2.2rem]" src={locationIcon} alt="" />
 
             {/* THE UNIVERSITY NAME */}
-            <p className=" 2xl:text-xl">University of Engineering And Management Jaipur</p>
+            <p className=" xl:text-xl lg:text-base">University of Engineering And Management Jaipur</p>
 
           </div>
         </div>
@@ -123,7 +137,7 @@ export const Home = () => {
 
 
         {/* THE CAROUSOUL */}
-        <div className=" bg-red-700
+        <div className="
         ">
           <Slider {...settings}>
 
@@ -195,6 +209,9 @@ export const Home = () => {
       xl:px-16
       xl:py-16
       xl:pb-32
+      lg:pb-16
+      lg:px-8
+      lg:py-16
       ">
 
 
@@ -204,6 +221,7 @@ export const Home = () => {
         2xl:w-[50%]
         2xl:mr-[2rem]
         xl:mr-[2rem]
+        lg:mr-[3rem]
         ">
 
           {/* HEADING */}
@@ -212,11 +230,14 @@ export const Home = () => {
             2xl:text-5xl
             xl:text-3xl
             xl:mb-4
+            lg:text-2xl
+            
+            
             ">About Us</h1>
 
           {/* PARAGRAPH */}
           <p className=" 2xl:text-2xl
-          xl:text-xl">The vision behind organizing this conference is to provide an excellent forum for researchers, scientist and industrialist from interdisciplinary areas to showcase their current contribution in the recent area of Physical Sciences. The objectives of International Conference on Computational Applied Sciences and it’s Applications (ICCASA-2023) are to abreast the young minds from Institutes, Universities, Colleges and Industries across the country, with the latest advancements in the field of this area, and providing them an opportunity to share their recent researches and views in various fields of Physical Sciences and their applications for the ultimate benefit of the Society and Industry. The broad aim of the conference is to groom the young scientists’ minds to face the challenges of future for effective and efficient professional responsibilities. The conference will cover a wide range of topics in the form of plenary speakers, keynote speakers, invited talks & contributory papers presentations.UEM Jaipur was established in the year 2011 by Ordinance 11 of 2011 and Act No 5 of 2012 of Govt of Rajasthan. UEM Jaipur has achieved the awards of “Best Private University in North India” and “Best Emerging University in North India”.</p>
+          xl:text-xl lg:text-base">The vision behind organizing this conference is to provide an excellent forum for researchers, scientist and industrialist from interdisciplinary areas to showcase their current contribution in the recent area of Physical Sciences. The objectives of International Conference on Computational Applied Sciences and it’s Applications (ICCASA-2023) are to abreast the young minds from Institutes, Universities, Colleges and Industries across the country, with the latest advancements in the field of this area, and providing them an opportunity to share their recent researches and views in various fields of Physical Sciences and their applications for the ultimate benefit of the Society and Industry. The broad aim of the conference is to groom the young scientists’ minds to face the challenges of future for effective and efficient professional responsibilities. The conference will cover a wide range of topics in the form of plenary speakers, keynote speakers, invited talks & contributory papers presentations.UEM Jaipur was established in the year 2011 by Ordinance 11 of 2011 and Act No 5 of 2012 of Govt of Rajasthan. UEM Jaipur has achieved the awards of “Best Private University in North India” and “Best Emerging University in North India”.</p>
         </div>
 
 
@@ -228,11 +249,13 @@ export const Home = () => {
         {/* THE IMPORTANT DATES SECTION */}
         <div className="importantDates-wrapper font-sofia 
         2xl:text-xl
-        xl:text-lg">
+        xl:text-lg
+        lg:text-base">
           <div>
             <h1 className=" font-bold 
             2xl:text-4xl
             xl:text-3xl
+            lg:text-2xl
             mb-4">Important Dates</h1>
           </div>
 
