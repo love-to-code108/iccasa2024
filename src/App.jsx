@@ -11,7 +11,6 @@ import uemLogoBackground from "./assets/PNG/uemBackgroundLogo.svg"
 import uemLogo from "./assets/PNG/uemLogo2-removebg-preview.png"
 import icassaLogo from "./assets/PNG/ICASSALogo.png"
 import locationIcon from "./assets/PNG/location_on.png"
-import { FaFacebookSquare } from "react-icons/fa";
 import facebook from "./assets/PNG/facebook.png"
 import linkedin from "./assets/PNG/linkedin.png"
 import twitter from "./assets/PNG/twitter.png"
@@ -114,7 +113,7 @@ function ContactUs() {
 
 
       {/* THE FIRST BLOCK CONTAINING THE HEADING PHONE NUMBER EMAIL AND UNIVERSITY LOCATION */}
-      <div className=" flex flex-col h-[63%] mr-[15rem]">
+      <div className=" flex flex-col h-[63%] mr-[18rem]">
 
 
         {/* CONTACT US HEADING */}
@@ -147,7 +146,7 @@ function ContactUs() {
 
 
       {/* PREVIOUS WEBSITE DETAILS */}
-      <div className=" h-[63%] flex flex-col mr-[4rem]">
+      <div className=" h-[63%] flex flex-col mr-[7rem]">
 
         <h1 className="font-bold xl:text-3xl mb-4">Previous Websites</h1>
 
@@ -162,7 +161,7 @@ function ContactUs() {
 
 
       {/* GALLERY DEAILS */}
-      <div className=" flex flex-col h-[63%] ">
+      <div className=" flex flex-col h-[63%] mr-[5rem]">
         <h1 className=" font-bold xl:text-3xl">Gallery</h1>
         <p>Memories of previous events</p>
 
@@ -172,9 +171,11 @@ function ContactUs() {
 
 
       {/* FACEBOOK LINKEDIN AND TWITTER */}
-      <div className="flex justify-center items-center h-[63%] w-[5rem]">
-      <FaFacebookSquare />
-        
+      <div className="flex items-start h-[63%] ">
+
+        <img className="w-[2rem] h-[2rem] mr-2" src={facebook}></img>
+        <img className="w-[2rem] h-[2rem] mr-2" src={linkedin}></img>
+        <img className="w-[2rem] h-[2rem] mr-2" src={twitter}></img>
       </div>
 
 
