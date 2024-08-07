@@ -93,7 +93,7 @@ function Navbar() {
       <NavLink to="/Keynote_Speaker" className="nav-link">Keynote Speaker</NavLink>
       <NavLink to="/Organinzing_Team" className="nav-link">Organizing Team</NavLink>
       <NavLink to="/Registration" className="nav-link">Registration</NavLink>
-      <NavLink to="/scope" className="nav-link">Contact Us</NavLink>
+      <a href="#ContactUs" className="nav-link">Contact Us</a>
     </div>
   );
 }
@@ -108,7 +108,7 @@ function Navbar() {
 function ContactUs() {
 
   return (
-    <div className="contactUs_section 
+    <div id="ContactUs" className="contactUs_section 
     2xl:px-32 2xl:text-xl 
     xl:text-lg
     xl:px-16
