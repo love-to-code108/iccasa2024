@@ -159,7 +159,7 @@ export const Home = () => {
 
       {/* THE ABOUT US SECTION AND THE IMPORTANT DATES SECTION WRAPPER */}
       <div className=" flex justify-center 
-      2xl:px-32
+      2xl:px-16
       2xl:py-16
       ">
 
@@ -183,44 +183,11 @@ export const Home = () => {
 
 
         {/* THE IMPORTANT DATES SECTION */}
-        <div className=" 2xl:p-5 h-[16rem] bg-[#F4F4F4] importantDates-wrapper">
-
-
-          <div>
-            {/* IMPORTANT DATES */}
-            <div>
-              <h1 className=" text-3xl font-bold mb-4">Important Dates</h1>
-            </div>
+        <div className=" 2xl:p-5 bg-[#F4F4F4] importantDates-wrapper">
 
 
 
-            <div className="flex">
-              {/* WRITINGS */}
-              <div className=" flex flex-col
-            2xl:text-xl
-            xl:mr-8
-            ">
-                <p className=" text-[#0047FF]">Call for paper/abstract submission starting date</p>
-                <p className="text-[#FF0000]">Call for paper/abstract submission ending date</p>
-                <p className=" text-[#0047FF]">Registration starting date</p>
-                <p className="text-[#FF0000]">Registration ending date</p>
-                <p>Accomodation booking date</p>
-              </div>
 
-
-              {/* DATES */}
-              <div className=" flex flex-col
-            2xl:text-xl
-            ">
-                <p className=" text-[#0047FF]">15th August 2024</p>
-                <p className="text-[#FF0000]">15th September 2024</p>
-                <p className=" text-[#0047FF]">15th August 2024</p>
-                <p className="text-[#FF0000]">15th September 2024</p>
-                <p>30th Oct - 10th Nov</p>
-              </div>
-
-            </div>
-          </div>
 
 
 
@@ -228,10 +195,13 @@ export const Home = () => {
 
 
 
-
       </div>
 
 
+
+
     </div>
+
+
   )
 }
