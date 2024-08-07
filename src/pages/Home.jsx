@@ -94,7 +94,6 @@ export const Home = () => {
 
         {/* THE CAROUSOUL */}
         <div className=" bg-red-700
-        2xl:mb-24
         ">
           <Slider {...settings}>
 
@@ -160,16 +159,20 @@ export const Home = () => {
 
       {/* THE ABOUT US SECTION AND THE IMPORTANT DATES SECTION WRAPPER */}
       <div className=" flex justify-center 
-      2xl:px-32">
+      2xl:px-32
+      2xl:py-16
+      ">
 
 
 
         {/* THE ABOUT US SECTION  */}
         <div className=" flex flex-col 
-        2xl:w-[50%]">
+        2xl:w-[50%]
+        2xl:mr-[5rem]
+        ">
 
           {/* HEADING */}
-          <h1 className=" text-5xl
+          <h1 className=" text-5xl font-bold
             2xl:mb-8">About Us</h1>
 
           {/* PARAGRAPH */}
@@ -177,10 +180,54 @@ export const Home = () => {
         </div>
 
 
+
+
         {/* THE IMPORTANT DATES SECTION */}
-        <div>
+        <div className=" 2xl:p-5 h-[16rem] bg-[#F4F4F4] importantDates-wrapper">
+
+
+          <div>
+            {/* IMPORTANT DATES */}
+            <div>
+              <h1 className=" text-3xl font-bold mb-4">Important Dates</h1>
+            </div>
+
+
+
+            <div className="flex">
+              {/* WRITINGS */}
+              <div className=" flex flex-col
+            2xl:text-xl
+            xl:mr-8
+            ">
+                <p className=" text-[#0047FF]">Call for paper/abstract submission starting date</p>
+                <p className="text-[#FF0000]">Call for paper/abstract submission ending date</p>
+                <p className=" text-[#0047FF]">Registration starting date</p>
+                <p className="text-[#FF0000]">Registration ending date</p>
+                <p>Accomodation booking date</p>
+              </div>
+
+
+              {/* DATES */}
+              <div className=" flex flex-col
+            2xl:text-xl
+            ">
+                <p className=" text-[#0047FF]">15th August 2024</p>
+                <p className="text-[#FF0000]">15th September 2024</p>
+                <p className=" text-[#0047FF]">15th August 2024</p>
+                <p className="text-[#FF0000]">15th September 2024</p>
+                <p>30th Oct - 10th Nov</p>
+              </div>
+
+            </div>
+          </div>
+
+
 
         </div>
+
+
+
 
       </div>
 
