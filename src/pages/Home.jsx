@@ -19,8 +19,15 @@ import image7_2023 from "../assets/PNG/2023_Event_Images/2023-image7.jpg"
 import image8_2023 from "../assets/PNG/2023_Event_Images/IMG-20230714-WA0008.jpg"
 
 
+// CHAKRA UI
+import {
+  Table,
+  Tbody,
+  Tr,
+  Td,
+  TableContainer,
+} from '@chakra-ui/react'
 
-import React from "react";
 import Slider from "react-slick";
 
 
@@ -156,11 +163,15 @@ export const Home = () => {
 
 
 
+{/* ************************************************************ *************/}
+
 
       {/* THE ABOUT US SECTION AND THE IMPORTANT DATES SECTION WRAPPER */}
       <div className=" flex justify-center 
       2xl:px-16
-      2xl:py-16
+      xl:px-16
+      xl:py-16
+      xl:pb-32
       ">
 
 
@@ -168,30 +179,76 @@ export const Home = () => {
         {/* THE ABOUT US SECTION  */}
         <div className=" flex flex-col 
         2xl:w-[50%]
-        2xl:mr-[5rem]
+        2xl:mr-[2rem]
+        xl:mr-[2rem]
         ">
 
           {/* HEADING */}
-          <h1 className=" text-5xl font-bold
-            2xl:mb-8">About Us</h1>
+          <h1 className=" font-bold
+            2xl:mb-8
+            2xl:text-5xl
+            xl:text-3xl
+            xl:mb-4
+            ">About Us</h1>
 
           {/* PARAGRAPH */}
-          <p className=" text-2xl">The vision behind organizing this conference is to provide an excellent forum for researchers, scientist and industrialist from interdisciplinary areas to showcase their current contribution in the recent area of Physical Sciences. The objectives of International Conference on Computational Applied Sciences and it’s Applications (ICCASA-2023) are to abreast the young minds from Institutes, Universities, Colleges and Industries across the country, with the latest advancements in the field of this area, and providing them an opportunity to share their recent researches and views in various fields of Physical Sciences and their applications for the ultimate benefit of the Society and Industry. The broad aim of the conference is to groom the young scientists’ minds to face the challenges of future for effective and efficient professional responsibilities. The conference will cover a wide range of topics in the form of plenary speakers, keynote speakers, invited talks & contributory papers presentations.UEM Jaipur was established in the year 2011 by Ordinance 11 of 2011 and Act No 5 of 2012 of Govt of Rajasthan. UEM Jaipur has achieved the awards of “Best Private University in North India” and “Best Emerging University in North India”.</p>
+          <p className=" 2xl:text-2xl
+          xl:text-xl">The vision behind organizing this conference is to provide an excellent forum for researchers, scientist and industrialist from interdisciplinary areas to showcase their current contribution in the recent area of Physical Sciences. The objectives of International Conference on Computational Applied Sciences and it’s Applications (ICCASA-2023) are to abreast the young minds from Institutes, Universities, Colleges and Industries across the country, with the latest advancements in the field of this area, and providing them an opportunity to share their recent researches and views in various fields of Physical Sciences and their applications for the ultimate benefit of the Society and Industry. The broad aim of the conference is to groom the young scientists’ minds to face the challenges of future for effective and efficient professional responsibilities. The conference will cover a wide range of topics in the form of plenary speakers, keynote speakers, invited talks & contributory papers presentations.UEM Jaipur was established in the year 2011 by Ordinance 11 of 2011 and Act No 5 of 2012 of Govt of Rajasthan. UEM Jaipur has achieved the awards of “Best Private University in North India” and “Best Emerging University in North India”.</p>
         </div>
+
+
+
 
 
 
 
         {/* THE IMPORTANT DATES SECTION */}
-        <div className=" 2xl:p-5 bg-[#F4F4F4] importantDates-wrapper">
+        <div className="importantDates-wrapper font-sofia 
+        2xl:text-xl
+        xl:text-lg">
+          <div>
+            <h1 className=" font-bold 
+            2xl:text-4xl
+            xl:text-3xl
+            mb-4">Important Dates</h1>
+          </div>
 
+          <TableContainer width="10rem" maxWidth="43rem">
+            <Table variant='striped' colorScheme="blue" size="md">
+              <Tbody>
+                <Tr>
+                  <Td>Call for paper/abstract submission</Td>
+                  <Td>15th Aug 2024</Td>
 
+                </Tr>
+                <Tr>
+                  <Td>Call for paper/Abstract submission ending date </Td>
+                  <Td>15th Sep 2024</Td>
 
+                </Tr>
+                <Tr>
+                  <Td>Registration starting date</Td>
+                  <Td>15th Aug 2024</Td>
+                </Tr>
+                <Tr>
+                  <Td>Registration ending date</Td>
+                  <Td>15th Sep 2024</Td>
 
+                </Tr>
+                <Tr>
+                  <Td>Accommodation booking date</Td>
+                  <Td>30th Oct - 10th Nov</Td>
 
+                </Tr>
 
-
+              </Tbody>
+            </Table>
+          </TableContainer>
         </div>
+
+
+
+
 
 
 
@@ -200,7 +257,7 @@ export const Home = () => {
 
 
 
-    </div>
+    </div >
 
 
   )

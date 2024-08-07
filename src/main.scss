@@ -18,6 +18,10 @@ body {
     font-family: "Sofia Sans", sans-serif;
 }
 
+*{
+    font-family: "Sofia Sans", sans-serif;
+}
+
 // ALL VARIABLES
 $left-right-padding: 8rem;
 $uem-purple: #14008F;
@@ -210,12 +214,7 @@ $uem-purple: #14008F;
 // ***************************************************************************
 // HOME MAIN
 .importantDates-wrapper{
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: fit-content;
+    
 }
 
 
