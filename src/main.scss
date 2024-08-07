@@ -10,7 +10,7 @@
     font-family: "Sofia Sans", sans-serif;
 }
 
-body{
+body {
     font-family: "Sofia Sans", sans-serif;
 }
 
@@ -18,67 +18,67 @@ body{
 $left-right-padding: 8rem;
 $uem-purple: #14008F;
 
-
+// ***************************************************************************
 // BANNER
-.Banner-main{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+.Banner-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-     width: 100vw;
-     height: 10rem;
+    width: 100vw;
+    height: 10rem;
 
-     position: relative;
+    position: relative;
 
-     padding: 0rem $left-right-padding;
+    padding: 0rem $left-right-padding;
 }
 
 
-.Banner-wrapper-1-text_and_backgroundLogo_uem{
+.Banner-wrapper-1-text_and_backgroundLogo_uem {
     text-align: center;
     position: relative;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.banner-uemLogoBackground{
+.banner-uemLogoBackground {
     position: absolute;
-    
+
 }
 
 
-
+// ***************************************************************************
 // MAKNG THE BANNER RESPONSIVE
 @media (max-width: 1536px) {
-    .Banner-main{
+    .Banner-main {
         display: flex;
         justify-content: space-between;
         align-items: center;
-   
+
         width: 100vw;
         height: 10rem;
-   
+
         position: relative;
-   
+
         padding: 0rem $left-right-padding - 2rem;
-   }
+    }
 }
 
 @media (max-width: 1280px) {
-    .Banner-main{
+    .Banner-main {
         display: flex;
         justify-content: space-between;
         align-items: center;
-   
+
         width: 100vw;
         height: 10rem;
-   
+
         position: relative;
-   
+
         padding: 0rem $left-right-padding - 4rem;
-   }
+    }
 }
 
 
@@ -88,7 +88,7 @@ $uem-purple: #14008F;
 
 // ***************************************************************************
 // NAVBAR 
-.Navbar-main{
+.Navbar-main {
     width: 100vw;
     height: 4rem;
 
@@ -102,20 +102,72 @@ $uem-purple: #14008F;
 
     padding: 0rem $left-right-padding;
 
-.nav-link{
+    .nav-link {
 
-    padding: 0rem 2rem;
+        padding: 0rem 2rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    
+
+    }
+
+    .nav-link:hover {
+        background-color: $uem-purple;
+        color: white;
+    }
 }
 
-.nav-link:hover{
-    background-color: $uem-purple;
-    color: white;
-}
+// **********************************************************************
+// MAKING THE NAVBAR RESPONSIVE
+@media (max-width:1354px) {
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
+    .Navbar-main {
+        padding: 0rem $left-right-padding - 4rem;
+    }
 }
 
+@media (max-width:1264px) {
+
+    .Navbar-main {
+        padding: 0rem $left-right-padding - 4rem;
+    }
+}
+
+@media (max-width:1128px) {
+
+    .Navbar-main {
+        width: 100vw;
+        height: 3rem;
+
+        border: 2px solid black;
+        border-left: 0px;
+        border-right: 0px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: cente;
+
+        padding: 0rem $left-right-padding;
+    }
+
+    .nav-link{
+        font-size: 1.1rem;
+    }
+
+    .Navbar-main {
+        padding: 0rem $left-right-padding - 4rem;
+    }
+}
+
+@media (max-width:1036px){
+
+    .nav-link{
+        padding: 0rem 1rem;
+        font-size: 1rem;
+    }
+}
