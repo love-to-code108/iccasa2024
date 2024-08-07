@@ -220,6 +220,8 @@ $uem-purple: #14008F;
     align-items: start;
 
     color: white;
+
+    
 }
 
 
@@ -234,6 +236,37 @@ $uem-purple: #14008F;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 15.625rem;
+
+    border-top: 2px solid black;
     
+}
+
+
+
+// MAKING THE CONTACT US SECTION RESPONSIVE 
+@media(max-width:1764px){
+    .contactUs_section div:nth-child(1){
+        margin-right: 7rem;
+    }
+}
+
+@media(max-width:1446px){
+    .contactUs_section div:nth-child(1){
+        margin-right: 4rem;
+    }
+}
+
+@media (max-width:1272px){
+    .contactUs_section{
+        height: 12.625rem;
+        
+    }
+}
+
+@media (max-width:1136px){
+    .contactUs_section div:nth-child(1){
+        margin-right: 0 rem;
+    }
 }
