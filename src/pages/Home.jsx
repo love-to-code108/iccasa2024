@@ -34,7 +34,6 @@ export const Home = () => {
 
   // SETTINGS FOR THE CAROUSEL
   let settings = {
-    dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
@@ -46,6 +45,8 @@ export const Home = () => {
     arrows: false,
     dots: false,
   };
+
+
 
 
 
@@ -82,6 +83,11 @@ export const Home = () => {
 
           </div>
         </div>
+
+
+
+
+
 
 
 
