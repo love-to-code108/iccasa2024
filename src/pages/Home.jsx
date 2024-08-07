@@ -29,6 +29,7 @@ import {
 } from '@chakra-ui/react'
 
 import Slider from "react-slick";
+import { useState,useEffect } from "react";
 
 
 
@@ -36,7 +37,29 @@ import Slider from "react-slick";
 
 export const Home = () => {
 
+  const [autoWidth , setAutoWidth] = useState("43rem");
 
+  useEffect(() => {
+    function handleResize() {
+      if(window.innerWidth < 1490){
+        setAutoWidth("38rem")
+      }
+
+      if(window.innerWidth < 1380){
+        setAutoWidth("35rem")
+      }
+      if(window.innerWidth > 1542){
+        setAutoWidth("43rem")
+      }
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
 
   // SETTINGS FOR THE CAROUSEL
@@ -213,7 +236,7 @@ export const Home = () => {
             mb-4">Important Dates</h1>
           </div>
 
-          <TableContainer width="10rem" maxWidth="43rem">
+          <TableContainer width={autoWidth} maxWidth="43rem">
             <Table variant='striped' colorScheme="blue" size="md">
               <Tbody>
                 <Tr>
