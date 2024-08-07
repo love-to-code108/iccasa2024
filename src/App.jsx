@@ -103,7 +103,11 @@ function Navbar() {
 function ContactUs() {
 
   return (
-    <div className=" border-2">Contact Us Section</div>
+    <div className=" border-2">
+      
+
+      {/*  */}
+    </div>
   );
 }
 
