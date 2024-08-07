@@ -25,7 +25,7 @@ $uem-purple: #14008F;
     justify-content: space-between;
     align-items: center;
 
-    width: 100vw;
+    width: 100%;
     height: 10rem;
 
     position: relative;
@@ -89,7 +89,7 @@ $uem-purple: #14008F;
 // ***************************************************************************
 // NAVBAR 
 .Navbar-main {
-    width: 100vw;
+    width: 100%;
     height: 4rem;
 
     border: 2px solid black;
@@ -155,7 +155,7 @@ $uem-purple: #14008F;
         padding: 0rem $left-right-padding;
     }
 
-    .nav-link{
+    .nav-link {
         font-size: 1.1rem;
     }
 
@@ -164,9 +164,9 @@ $uem-purple: #14008F;
     }
 }
 
-@media (max-width:1036px){
+@media (max-width:1036px) {
 
-    .nav-link{
+    .nav-link {
         padding: 0rem 1rem;
         font-size: 1rem;
     }
@@ -180,22 +180,44 @@ $uem-purple: #14008F;
 
 // ***************************************************************************
 // HANDLING THE CAROUSEL
-.homePageCarousel{
+.homePageCarousel {
     width: 100%;
     height: 28rem;
 
     border-bottom: 2px solid black;
 
-    div{
+    div {
         width: 100%;
         height: 100%;
 
         background-color: white;
     }
 
-    img{
+    img {
         width: 100%;
 
     }
 }
 
+
+
+
+// ***************************************************************************
+// THE WRITING OVER THE CAROUSEL
+.Home-main-wrapper-2-writing_over_carousel_and_black_overlay {
+    position: absolute;
+    width: 100%;
+    height: 28rem;
+
+    z-index: +10;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    pointer-events: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    color: white;
+}

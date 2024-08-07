@@ -2,7 +2,7 @@
 // import uemLogoBackground from "../assets/PNG/uemBackgroundLogo.svg"
 // import uemLogo from "../assets/PNG/uemLogo2-removebg-preview.png"
 // import icassaLogo from "../assets/PNG/ICASSALogo.png"
-// import locationIcon from "../assets/PNG/location_on.png"
+import locationIcon from "../assets/PNG/location_on.png"
 // import downArrow from "../assets/PNG/downArrow.png"
 // import image1 from "../assets/PNG/2023_Event_Images/2023-image1.jpg"
 import "slick-carousel/slick/slick.css";
@@ -40,16 +40,17 @@ export const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     className: "homePageCarousel",
-    autoplay:true,
+    autoplay: true,
     lazyLoad: true,
     autoplaySpeed: 5000,
-    arrows:false,
+    arrows: false,
+    dots: false,
   };
 
 
 
   return (
-    <div>
+    <div className="Home-main">
 
       {/* WRAPPER OVER THE CAROUSOUL AND THE WRITING */}
       <div>
@@ -57,63 +58,78 @@ export const Home = () => {
 
 
         {/* THE WRITING OVER THE CAROUSOUL AND THE BLACK OVERLAY*/}
-        <div>
+        <div className="Home-main-wrapper-2-writing_over_carousel_and_black_overlay 2xl:px-32">
 
+          {/* THE MAIN HEADING */}
+          <h1 className=" 2xl:text-7xl font-bold mb-2">ICCASA</h1>
+
+
+          {/* THE FULL FORM */}
+          <h3 className=" 
+          2xl:text-3xl 2xl:w-[56rem] 2xl:mb-4">International Conference On Computational Applied Sciences And It's Application . </h3>
+
+
+
+          {/* THE COLLEGE LOCATION AND NAME */}
+          <div className=" flex justify-center items-center relative right-2">
+
+
+            {/* THE LOCATION ICON */}
+            <img className=" w-[2.2rem]" src={locationIcon} alt="" />
+
+            {/* THE UNIVERSITY NAME */}
+            <p className=" 2xl:text-xl">University of Engineering And Management Jaipur</p>
+
+          </div>
         </div>
 
 
 
 
         {/* THE CAROUSOUL */}
-        <div>
+        <div className=" bg-red-700
+        2xl:mb-24
+        ">
           <Slider {...settings}>
 
 
             <div>
               <img src={image1_2023} alt="" />
-
             </div>
 
 
             <div>
               <img src={image2_2023} alt="" />
-
             </div>
 
 
             <div>
               <img src={image3_2023} alt="" />
-
             </div>
 
 
             <div>
               <img src={image4_2023} alt="" />
-
             </div>
 
 
             <div>
-
               <img src={image5_2023} alt="" />
             </div>
 
 
             <div>
-
               <img src={image6_2023} alt="" />
             </div>
 
 
             <div>
-
               <img src={image7_2023} alt="" />
             </div>
 
 
             <div>
               <img src={image8_2023} alt="" />
-
             </div>
 
 
@@ -125,6 +141,10 @@ export const Home = () => {
 
 
       </div>
+
+
+
+
 
 
 
