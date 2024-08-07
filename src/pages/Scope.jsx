@@ -1,21 +1,28 @@
-import React from 'react'
 import scopeImage from '../assets/PNG/2023_Event_Images/scopeImage.png'
 
 
 
 export const Scope = () => {
   return (
-    <div className='scope-main xl:px-[9.2rem] xl:py-[6rem]'>
+    <div className='scope-main 2xl:px-[9.2rem] 
+    lg:py-[6rem]
+    xl:px-[5.2rem]
+    lg:px-[3rem]'>
 
       {/* WRAPPER FOR THE HEADING AND THE BULLET POINTS */}
-      <div className='flex flex-col w-[50%]'>
+      <div className='flex flex-col 
+      2xl:w-[50%]
+      lg:w-[70%]
+      lg:ml-[2rem]
+      lg:mr-[1rem]
+      '>
         {/* HEADING */}
         <h1 className=' 
          font-bold
          relative
          right-6
-         xl:mb-6
-         xl:text-4xl
+         lg:mb-6
+        lg:text-3xl
 
          '>Thrust areas of the Conference (ICCASA-2024)</h1>
 
