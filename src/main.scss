@@ -357,8 +357,17 @@ $uem-purple: #14008F;
 
     padding: 0rem 1.8rem;
 
+    z-index: +2;
+
+    box-shadow: 6px 6px $uem-purple;
 
     img{
         border: 2px solid black;
     }
+}
+
+.KeynoteSpeakers-card-wrapper{
+    display: grid;
+    grid-template-columns: 480px 480px 480px;
+    gap: 2rem;
 }
