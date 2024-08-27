@@ -7,6 +7,29 @@ import {
 } from '@chakra-ui/react'
 
 
+
+
+// IMPORTING IMAGES BELOW
+import satyajitChakrabarti from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import Biswajoy_Chatterjee from "../assets/PNG/organizing team 2024/biswajoy.jpg"
+import SatyajitChakrabarti2 from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import PradeepKumarSharma from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import MukeshYadav from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import tarunSharma from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import rahulSharma from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import ArnabPalui from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import PraphullChhabra from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import AnamikaKhaskel from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import PallaviMalik from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import PriyankaChhaparwal from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import BiswanathMukherjee from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import ManishKrJangir from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import BhimLama from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import ShyamLal from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import kamalKishoreKumawat from "../assets/PNG/organizing team 2024/satyajitChakrabarti.png"
+import { KeynoteSpeaker_card_component } from '../components/KeynoteSpeaker_card_component'
+
+
 export const OrganizingTeam = () => {
   return (
     <div className=' lg:w-[100%] flex flex-col py-28 justify-center items-center '>
@@ -103,61 +126,103 @@ export const OrganizingTeam = () => {
 
 
       {/* THE ORGANIZING TEAM SECTION */}
-      <div >
+      <div className='w-[100%] flex flex-col items-center'>
 
-
-        <h1>Organizing Team</h1>
-
+        <div>
+          <h1 className='text-5xl font-bold mb-10'>Organizing Team</h1>
+        </div>
 
         {/* SATYAJIT CHAKRABARTI */}
-        <div>
-
+        <div className=' mb-12'>
+          <KeynoteSpeaker_card_component image={satyajitChakrabarti} bold="Prof.(Dr.) Satyajit Chakrabarti" line1="CHIEF PATRON" line2="CHANCELLOR" line3="UEM JAIPUR" />
         </div>
+
+
+
 
         {/* BISWAJOY AND SATYAJIT */}
-        <div>
+        <div className=' mb-12'>
+          <KeynoteSpeaker_card_component image={Biswajoy_Chatterjee} bold="" line1="" line2="" line3="" />
 
+          <KeynoteSpeaker_card_component image={SatyajitChakrabarti2} bold="" line1="" line2="" line3="" />
         </div>
 
-        {/* MUKESH YADAV  PRADEEP KR SHARMA */}
-        <div>
 
+
+
+        {/* MUKESH YADAV  PRADEEP KR SHARMA */}
+        <div className=' mb-12'>
+          <KeynoteSpeaker_card_component image={PradeepKumarSharma} bold="" line1="" line2="" line3="" />
+
+          <KeynoteSpeaker_card_component image={MukeshYadav} bold="" line1="" line2="" line3="" />
         </div>
 
 
         {/* TARUN SHARMA , RAHUL SHARMA , ARNAB PALUI */}
-        <div>
+        <div className=' mb-12'>
+          <KeynoteSpeaker_card_component image={tarunSharma} bold="" line1="" line2="" line3="" />
+
+
+          <KeynoteSpeaker_card_component image={rahulSharma} bold="" line1="" line2="" line3="" />
+
+
+
+          <KeynoteSpeaker_card_component image={ArnabPalui} bold="" line1="" line2="" line3="" />
 
         </div>
+
+
+
 
 
         {/* PRAPHULL CHHABRA , ANAMIKA KHASKEL  */}
-        <div>
+        <div className=' mb-12'>
+          <KeynoteSpeaker_card_component image={PraphullChhabra} bold="" line1="" line2="" line3="" />
 
+
+          <KeynoteSpeaker_card_component image={AnamikaKhaskel} bold="" line1="" line2="" line3="" />
         </div>
+
+
+
+
 
         {/* PALLAVI MALIK , PRIYANKA CHAPARWAL */}
-        <div>
+        <div className=' mb-12'>
+          <KeynoteSpeaker_card_component image={PallaviMalik} bold="" line1="" line2="" line3="" />
+
+          <KeynoteSpeaker_card_component image={PriyankaChhaparwal} bold="" line1="" line2="" line3="" />
+
 
         </div>
+
+
 
 
         {/* ME */}
-        <div>
-
+        <div className=' mb-12'>
+          <KeynoteSpeaker_card_component image={BiswanathMukherjee} bold="" line1="" line2="" line3="" />
         </div>
+
+
 
 
 
         {/* Manish Kr. Jangir  , Kamal Kishore Kumawat*/}
-        <div>
+        <div className=' mb-12'>
+          <KeynoteSpeaker_card_component image={ManishKrJangir} bold="" line1="" line2="" line3="" />
 
+          <KeynoteSpeaker_card_component image={kamalKishoreKumawat} bold="" line1="" line2="" line3="" />
         </div>
 
 
-        {/* BHIM LAMA , SHYAM LAL */}
-        <div>
 
+
+        {/* BHIM LAMA , SHYAM LAL */}
+        <div className=' mb-12'>
+          <KeynoteSpeaker_card_component image={BhimLama} bold="" line1="" line2="" line3="" />
+
+          <KeynoteSpeaker_card_component image={ShyamLal} bold="" line1="" line2="" line3="" />
         </div>
 
 
