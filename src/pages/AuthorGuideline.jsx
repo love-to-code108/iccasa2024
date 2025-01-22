@@ -9,7 +9,7 @@ export const AuthorGuideline = () => {
 
 
      {/* THE WRAPPER FOR AUTHOR GUIDLINES */}
-      <div>
+      
 
 
 
@@ -19,7 +19,7 @@ export const AuthorGuideline = () => {
 
         {/* AUTOHOR GUIDELINES */}
         <div
-          className=" xl:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
+          className=" lg:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
 lg:p-4 lg:py-6 lg:text-xl lg:mb-16"
         >
 
@@ -48,7 +48,7 @@ lg:p-4 lg:py-6 lg:text-xl lg:mb-16"
 
 
         {/* PAPER PREPARATION */}
-        <div className=" xl:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
+        <div className=" lg:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
 lg:p-4 lg:py-6 lg:text-xl lg:mb-16">
 
             {/* HEADING */}
@@ -90,7 +90,7 @@ lg:p-4 lg:py-6 lg:text-xl lg:mb-16">
 
 
         {/* PAPER SUBMISSION */}
-        <div className=" xl:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
+        <div className=" lg:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
 lg:p-4 lg:py-6 lg:text-xl lg:mb-16">
 
             {/* HEADING */}
@@ -110,7 +110,7 @@ lg:p-4 lg:py-6 lg:text-xl lg:mb-16">
 
 
         {/* ACESSING THE SUBMISSION SYSTEM */}
-        <div className=" xl:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
+        <div className=" lg:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
 lg:p-4 lg:py-6 lg:text-xl lg:mb-16"> 
 
             {/* HEADING */}
@@ -132,7 +132,7 @@ lg:p-4 lg:py-6 lg:text-xl lg:mb-16">
 
 
         {/* AUTHOR INFORMATION */}
-        <div className=" xl:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
+        <div className=" lg:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
 lg:p-4 lg:py-6 lg:text-xl lg:mb-16">
 
             {/* HEADING */}
@@ -152,7 +152,7 @@ lg:p-4 lg:py-6 lg:text-xl lg:mb-16">
 
 
         {/* PAPER UPLOADING */}
-        <div className=" xl:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
+        <div className=" lg:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
 lg:p-4 lg:py-6 lg:text-xl lg:mb-16">
 
             {/* HEADING */}
@@ -178,7 +178,7 @@ lg:p-4 lg:py-6 lg:text-xl lg:mb-16">
 
 
         {/* REVIEW PROCESS */}
-        <div className=" xl:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
+        <div className=" lg:w-[60rem] xl:text-2xl xl:mb-16 xl:p-8
 lg:p-4 lg:py-6 lg:text-xl lg:mb-16">
 
 
@@ -198,7 +198,7 @@ lg:p-4 lg:py-6 lg:text-xl lg:mb-16">
 
 
 
-      </div>
+      
     </div>
   );
 };

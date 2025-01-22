@@ -85,9 +85,9 @@ function Navbar() {
 
   return (
     <div className="Navbar-main 
-    2xl:text-3xl
-    xl:text-2xl
-    lg:text-xl
+    2xl:text-2xl
+    xl:text-lg
+    lg:text-lg
     ">
       <NavLink activeClassName="active" to="/" className="nav-link">Home</NavLink>
       <NavLink to="/scope" className="nav-link">Scope</NavLink>
