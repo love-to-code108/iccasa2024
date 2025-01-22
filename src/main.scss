@@ -26,6 +26,14 @@ body {
 $left-right-padding: 8rem;
 $uem-purple: #14008F;
 
+
+.url{
+    color: $uem-purple;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
 // ***************************************************************************
 // BANNER
 .Banner-main {
